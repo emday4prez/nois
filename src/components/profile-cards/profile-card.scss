@@ -4,3 +4,48 @@
   padding: 0px;
   box-sizing: border-box;
 }
+$header1: calc(0.8rem + 1vw);
+$header2: calc(4rem + 1vw);
+$header3: calc(0.6rem + 1vw);
+$header4: calc(0.4rem + 1vw);
+$text: calc(0.2rem + 0.5vw);
+$big: calc(2.4rem + 1vw);
+$special-color: #906272;
+$background-color: #414141;
+$grey-text: #525252;
+
+.card-front {
+  font-size: $header2;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  min-height: 60vh;
+  border-radius: 2rem;
+  box-shadow: 0 5px 5px lightgrey;
+  background-color: #414141;
+}
+
+.card-back {
+  font-size: $header2;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  min-height: 60vh;
+  border-radius: 2rem;
+}
+
+.profile-pic {
+  max-height: 40vh;
+  border-radius: 5rem;
+  opacity: 0.8;
+}
+.front-btn {
+  width: 35%;
+  height: 20vh;
+}

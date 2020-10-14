@@ -3,9 +3,9 @@ import "./profile-card.scss";
 
 const ProfileCardBack = ({ handleClick }) => {
   return (
-    <div>
-      THIS IS THE BACK
-      <button onClick={handleClick}>FLIP</button>
+    <div className='card-back'>
+<h1>THIS IS THE BACK </h1>
+      <button className='button-back' onClick={handleClick}>FLIP</button>
     </div>
   );
 };
