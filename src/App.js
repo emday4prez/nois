@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import CardFlip from "./components/cardFlip/cardFlip";
+import "./App.scss";
+import CardFlip from './components/card-flip/cardFlip'
 
 const App = () => {
   return <CardFlip />;

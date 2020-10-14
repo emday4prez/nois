@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import "./cardFlip.scss";
+import ProfileCardFront from "../profile-cards/profile-card-front";
+import ProfileCardBack from "../profile-cards/profile-card-back";
 
 const CardFlip = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -10,15 +12,9 @@ const CardFlip = () => {
   };
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-      <div>
-        This is the front of the card.
-        <button onClick={handleClick}>Click to flip</button>
-      </div>
+      <ProfileCardFront handleClick={handleClick}></ProfileCardFront>
 
-      <div>
-        This is the back of the card.
-        <button onClick={handleClick}>Click to flip</button>
-      </div>
+     <ProfileCardBack handleClick={handleClick}></ProfileCardBack>
     </ReactCardFlip>
   );
 };
