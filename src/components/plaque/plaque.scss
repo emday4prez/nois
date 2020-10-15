@@ -1,0 +1,46 @@
+.plaque-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 1rem;
+  min-height: 30vh;
+}
+.plaque {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 1rem;
+  background: black;
+  border-radius: 2rem;
+  min-height: 20vh;
+  min-width: 20vw;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.plaque-text {
+  display: flex;
+  min-width: 50vw;
+  flex-direction: column;
+
+  color: white;
+}
+
+img {
+  display: flex;
+  max-height: 40vh;
+  max-width: 40vw;
+  border-radius: 2rem;
+}
+
+.grammy {
+  font-size: calc(0.7rem + 1vw);
+}

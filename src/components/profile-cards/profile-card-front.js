@@ -8,7 +8,12 @@ const ProfileCardFront = ({ handleClick }) => {
       <div>
         <img className='profile-pic' src={profile} alt='profile pic' />
       </div>
-      <button className='front-btn'>N.O.I.S.</button>
+      <div className='front-text'>
+        <h1>Ya Boy N.O.I.S.</h1>
+        <h4>
+          Record Producer <br /> Mixing Engineer{" "}
+        </h4>
+      </div>
     </div>
   );
 };

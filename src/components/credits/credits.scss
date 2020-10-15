@@ -1,0 +1,96 @@
+* {
+  font-size: 62%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+$header1: calc(2rem + 4vw);
+$header2: calc(0.8rem + 2vw);
+$header3: calc(1rem + 5vw);
+$header4: calc(1rem + 3vw);
+$text: calc(0.8rem + 2vw);
+$small: calc(0.6rem + 1.5vw);
+$special-color: #906272;
+$background-color: #414141;
+$grey-text: #525252;
+
+h1 {
+  font-size: $header1;
+  margin: 2rem;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+  margin: 1rem;
+}
+h4 {
+  font-size: $header4;
+  margin: 1rem;
+}
+p {
+  font-size: $text;
+  margin: 1rem;
+}
+.all-credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.6rem;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+
+  flex-wrap: wrap;
+}
+
+.vl-image {
+  max-width: 40vw;
+  max-height: 40vh;
+}
+.ui-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  min-width: 65vw;
+  min-height: 55vh;
+}
+.nipsey {
+  border-radius: 0.7rem;
+
+  margin: 0.5rem;
+}
+.kendrick {
+  border-radius: 0.7rem;
+
+  margin: 0.5rem;
+}
+.content {
+  color: white;
+}
+li {
+  text-align: left;
+}

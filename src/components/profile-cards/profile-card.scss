@@ -4,18 +4,42 @@
   padding: 0px;
   box-sizing: border-box;
 }
-$header1: calc(0.8rem + 1vw);
-$header2: calc(4rem + 1vw);
-$header3: calc(0.6rem + 1vw);
-$header4: calc(0.4rem + 1vw);
+
+@font-face {
+  font-family: "Bangers";
+  src: url("../../fonts/Bangers/Bangers-Regular.ttf");
+}
+
+$header1: calc(2rem + 4vw);
+$header2: calc(1rem + 2vw);
+$header3: calc(1rem + 5vw);
+$header4: calc(1rem + 4vw);
 $text: calc(0.2rem + 0.5vw);
 $big: calc(2.4rem + 1vw);
 $special-color: #906272;
 $background-color: #414141;
 $grey-text: #525252;
 
-.card-front {
+h1 {
+  font-size: $header1;
+  margin: 2rem;
+}
+h2 {
   font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+  margin: 1.6rem;
+}
+h4 {
+  font-size: $header4;
+  margin: 1rem;
+}
+p {
+  font-size: $text;
+}
+
+.card-front {
   border: 1px solid black;
   display: flex;
   justify-content: space-around;
@@ -26,6 +50,8 @@ $grey-text: #525252;
   border-radius: 2rem;
   box-shadow: 0 5px 5px lightgrey;
   background-color: #414141;
+  flex-wrap: wrap;
+  font-family: "Bangers", sans-serif;
 }
 
 .card-back {
@@ -41,11 +67,23 @@ $grey-text: #525252;
 }
 
 .profile-pic {
-  max-height: 40vh;
-  border-radius: 5rem;
-  opacity: 0.8;
+  max-width: 60vw;
+  max-height: 60vw;
+  border-radius: 2rem;
+  padding: 1rem;
+  flex: 1 1 6rem;
 }
-.front-btn {
-  width: 35%;
-  height: 20vh;
+.front-text {
+  margin: 1.2rem;
+  letter-spacing: 0.5rem;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  color: rgb(209, 66, 66);
+}
+
+@media screen and (max-width: 668px) {
+  * {
+    font-size: 55%;
+  }
 }
