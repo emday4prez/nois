@@ -16,6 +16,16 @@ const creditList = [
     grammy: []
   },
   {
+    album: "Space Ghost Coast To Coast",
+    artist: "Glass Animals",
+    year: "2020",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/en/1/11/Dreamland_%28Glass_Animals%29.png",
+    platinum: "",
+    id: 6,
+    grammy: []
+  },
+  {
     album: "The Lost Boy",
     artist: "YBN Cordae",
     year: "2019",
@@ -27,6 +37,16 @@ const creditList = [
       "GRAMMY Nominated 'Best Rap Album'",
       "GRAMMY Nominated 'Best Rap Song' (Bad Idea)"
     ]
+  },
+  {
+    album: "Funeral",
+    artist: "Miguel",
+    year: "2019",
+    photo:
+      "https://img.discogs.com/VsfY70HSvhgw5DQGt1wOBRfJ8Vg=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14374676-1573247160-3856.jpeg.jpg",
+    platinum: "",
+    id: 7,
+    grammy: []
   },
 
   {
@@ -80,6 +100,7 @@ const Credits = () => {
         item={item}
         platinum={item.platinum}
         grammy={item.grammy}
+        key={item.id}
       ></Plaque>
     </div>
   ));

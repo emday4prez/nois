@@ -11,7 +11,11 @@ const Plaque = ({
   platinum,
   grammy
 }) => {
-  const grammyList = grammy.map((el) => <p className='grammy'>{el}</p>);
+  const grammyList = grammy.map((el) => (
+    <p className='grammy' key={el.length}>
+      {el}
+    </p>
+  ));
   return (
     <div className='plaque-container'>
       <div className='plaque'>
